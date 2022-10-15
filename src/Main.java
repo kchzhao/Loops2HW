@@ -51,7 +51,6 @@ public class Main {
         //HW 2 Exercise 2
         System.out.println();
         System.out.println("HW 2 Exercise 2");
-        //initialAmount = 15000.0;
         total2 = 0;
         month = 1;
         while(total2 <= 12_000_000){
