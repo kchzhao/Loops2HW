@@ -31,8 +31,8 @@ public class Main {
         double peopleBorn = 17.0/1000.0;
         double peopleDied = 8.0/1000.0;
         double population = 12_000_000;
-        for(i = 0; i <= 10; i++){
-            population = population + (population * (peopleBorn - peopleDied));
+        for(i = 1; i <= 10; i++){
+            population += (population * (peopleBorn - peopleDied));
             System.out.println("Год " + i + ", численность населения составляет " + population);
         }
 
