@@ -6,7 +6,7 @@ public class Main {
         int savingAmount = 15000;
         int i = 1;
         while(total <= 2_459_000){
-            total = total + savingAmount;
+            total += savingAmount;
             i++;
             System.out.println("Месяц " + i +   ", сумма накоплений равна " + total + " рублей");
         }
@@ -43,8 +43,8 @@ public class Main {
         double total2 = 0;
         int month = 1;
         while(total2 <= 12_000_000){
-            total2 = total2 + initialAmount;
-            total2 = total2 + (total2 * 7.0/100.0);
+            total2 += initialAmount;
+            total2 += (total2 * 7.0/100.0);
             System.out.println("Month " + month + ", total = " + total2);
             month++;
         }
@@ -58,8 +58,8 @@ public class Main {
             if(month % 6 == 0){
                 System.out.println("Month " + month + ", total = " + total2);
             }
-        total2 = total2 + initialAmount;
-        total2 = total2 + (total2 * 7.0/100.0);
+        total2 += initialAmount;
+        total2 += (total2 * 7.0/100.0);
         month++;
         }
 
@@ -76,8 +76,8 @@ public class Main {
                 }
             }
 
-            total2 = total2 + initialAmount;
-            total2 = total2 + (total2 * 7.0/100.0);
+            total2 += initialAmount;
+            total2 += (total2 * 7.0/100.0);
             month++;
         }
 
@@ -88,7 +88,7 @@ public class Main {
         int day = 1;
         while(day <= 31 && friday <= 31){
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
-            friday = friday + 7;
+            friday += 7;
             day++;
         }
 
