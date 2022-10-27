@@ -70,9 +70,7 @@ public class Main {
         month = 1;
         while(month <= 108){
             if(month % 6 == 0){
-                if(month % 4 != 0) {
-                    System.out.println("Month " + month + ", total = " + total2);
-                }
+                System.out.println("Month " + month + ", total = " + total2);
             }
 
             total2 += initialAmount;
@@ -83,25 +81,25 @@ public class Main {
         //HW 2 Exercise 4
         System.out.println();
         System.out.println("HW 2 Exercise 4");
-        int friday = 7;
-        int day = 1;
-        while(day <= 31 && friday <= 31){
+        int friday = 1;
+        //int day = 1;
+        while(friday <= 31){
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
             friday += 7;
-            day++;
+            //day++;
         }
 
         //HW 3 Exercise 1
         System.out.println();
         System.out.println("HW 3 Exercise 1");
-        int startYear = 1817;
-        int endYear = 2117;
-        int result = startYear;
-        while(result <= endYear){
-            if(result % 79 == 0) {
-                System.out.println(result);
+        int currentYear = 2022;
+        int year = currentYear - 200;
+        int endYear = currentYear + 100;
+        while(year <= endYear){
+            if(year % 79 == 0) {
+                System.out.println(year);
             }
-            result++;
+            year++;
         }
 
         //HW 3 Exercise 2
